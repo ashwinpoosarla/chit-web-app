@@ -1,0 +1,9 @@
+.fab-icon-container{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.add{
+    transform: rotate(45deg);
+}

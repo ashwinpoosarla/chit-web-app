@@ -1,0 +1,19 @@
+<div class="login-card">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="form-container">
+          <mat-form-field color="primary">
+              <input matInput #input placeholder="Mobile number" maxLength="10" [(ngModel)]="options.number">
+          </mat-form-field>
+          <mat-form-field color="primary">
+              <input matInput #input placeholder="PIN" maxLength="4" [(ngModel)]="options.pin">
+          </mat-form-field>
+          <br /> <br />
+          <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,13 @@
+.login-card{
+    width: 350px;
+    margin: 15% auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.form-container > * {
+width: 100%;
+}

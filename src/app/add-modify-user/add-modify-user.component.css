@@ -1,0 +1,11 @@
+.form-container mat-form-field{
+    display: block;
+}
+
+.form-container .form-field{
+    padding-bottom: 20px;
+}
+
+.form-container .form-field mat-checkbox{
+    margin-right: 10px;
+}

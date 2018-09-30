@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>{{modalData.title}}</h2>
+<mat-dialog-content class="modal-content">
+  <div class="form-container">
+    <mat-form-field color="primary">
+      <input matInput placeholder="User name" [(ngModel)]="modalData.NAME">
+    </mat-form-field>
+    <mat-form-field color="primary">
+      <input matInput placeholder="Phone number" [(ngModel)]="modalData.PHONE">
+    </mat-form-field>
+    <mat-form-field color="primary">
+      <input matInput placeholder="Alternative number" [(ngModel)]="modalData.SECONDARY_PHONE">
+    </mat-form-field>
+    <div class="form-field">
+        Type
+    </div>
+    <div class="form-field">
+        <mat-checkbox [(ngModel)]="modalData.IS_AGENT">Agent</mat-checkbox>
+        <mat-checkbox [(ngModel)]="modalData.IS_ADMIN">Admin</mat-checkbox>
+        <mat-checkbox [(ngModel)]="modalData.IS_CUSTOMER">Customer</mat-checkbox>
+    </div>
+    <mat-form-field color="primary">
+      <input matInput placeholder="Address" [(ngModel)]="modalData.ADDRESS">
+    </mat-form-field>
+    <mat-form-field color="primary">
+        <input matInput placeholder="Email" [(ngModel)]="modalData.EMAIL">
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="save()">Save</button>
+</mat-dialog-actions>

@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">Users</mat-toolbar>
+<div class="">
+  <mat-list>
+    <mat-list-item *ngFor="let user of users" (click)="updateUser(user)"> {{ user.NAME }} </mat-list-item>
+  </mat-list>
+  <div class="fab-icon-container">
+    <button mat-fab color="primary" (click)="openDialog()">
+      <mat-icon class="add">close</mat-icon>
+    </button>
+  </div>
+</div>
